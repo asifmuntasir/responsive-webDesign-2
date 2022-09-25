@@ -35,7 +35,7 @@ body {
     clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
 }
 
-/****** Logo BOx Design Start ******/
+/****** Logo Box Design Start ******/
 
 .logo-box {
     position: absolute;
@@ -47,6 +47,39 @@ body {
     height: 35px;
 }
 
-/****** Logo BOx Design End ******/
+/****** Logo Box Design End ******/
+
+/****** Heading Design Start ******/
+
+.text-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.heading-primary {
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+.heading-primary-main {
+    display: block;
+    font-size: 60px;
+    font-weight: 400;
+    letter-spacing: 35px;
+}
+
+.heading-primary-sub {
+    display: block;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 17.4px;
+}
+
+/****** Heading Design End ******/
+
+
+
 
 /*************** Header Design End ***************/
