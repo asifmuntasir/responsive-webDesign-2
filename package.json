@@ -1,0 +1,22 @@
+{
+  "name": "responsive-natours",
+  "version": "1.0.0",
+  "description": "Landing page for natours",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/asifmuntasir/responsive-webDesign-2.git"
+  },
+  "author": "Asif Muntasir",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/asifmuntasir/responsive-webDesign-2/issues"
+  },
+  "homepage": "https://github.com/asifmuntasir/responsive-webDesign-2#readme",
+  "devDependencies": {
+    "node-sass": "^7.0.3"
+  }
+}
