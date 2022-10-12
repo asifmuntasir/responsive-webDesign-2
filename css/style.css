@@ -6,40 +6,57 @@ Medium green: #55c57a
 Dark green: #28b485
 
 */
-* {
+*,
+::after,
+::before {
   margin: 0;
   padding: 0;
   box-sizing: border-box; }
 
+html {
+  font-size: 62.5%; }
+
+body {
+  box-sizing: border-box; }
+
+/****** Animation For Text Start ******/
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px); }
+  80% {
+    transform: translateX(17px); }
+  100% {
+    opacity: 1;
+    transform: translate(0); } }
+
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(100px); }
+  80% {
+    transform: translateX(-17px); }
+  100% {
+    opacity: 1;
+    transform: translate(0); } }
+
+/****** Animation For Text End ******/
+/****** Animation For Button Start ******/
+@keyframes moveInButton {
+  0% {
+    opacity: 0;
+    transform: translateY(30px); }
+  100% {
+    opacity: 1;
+    transform: translate(0); } }
+
+/****** Animation For Button End ******/
 body {
   font-family: 'Lato', sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.7;
   color: #777; }
-
-/*************** Header Design Start ***************/
-.header {
-  height: 95vh;
-  background-image: linear-gradient(to right bottom, rgba(85, 197, 122, 0.7), rgba(40, 180, 133, 0.7)), url(../img/hero.jpg);
-  background-size: cover;
-  background-position: top;
-  position: relative;
-  clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
-  /****** Logo Box Design Start ******/
-  /****** Logo Box Design End ******/ }
-  .header__logo-box {
-    position: absolute;
-    top: 40px;
-    left: 60px; }
-  .header__logo {
-    height: 35px; }
-  .header__text-box {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center; }
 
 /****** Heading Design Start ******/
 .heading-primary {
@@ -65,28 +82,7 @@ body {
     letter-spacing: 17.4px;
     animation: moveInRight 0.8s ease-out; }
 
-/****** Animation For Text Start ******/
-@keyframes moveInLeft {
-  0% {
-    opacity: 0;
-    transform: translateX(-100px); }
-  80% {
-    transform: translateX(17px); }
-  100% {
-    opacity: 1;
-    transform: translate(0); } }
-
-@keyframes moveInRight {
-  0% {
-    opacity: 0;
-    transform: translateX(100px); }
-  80% {
-    transform: translateX(-17px); }
-  100% {
-    opacity: 1;
-    transform: translate(0); } }
-
-/****** Animation For Text End ******/
+/****** Heading Design End ******/
 /****** Button Design Start ******/
 .btn:link, .btn:visited {
   text-transform: uppercase;
@@ -131,14 +127,40 @@ body {
   animation: moveInButton 0.5s ease-out 0.75s;
   animation-fill-mode: backwards; }
 
-@keyframes moveInButton {
-  0% {
-    opacity: 0;
-    transform: translateY(30px); }
-  100% {
-    opacity: 1;
-    transform: translate(0); } }
-
 /****** Button Design End ******/
-/****** Heading Design End ******/
+/*************** Header Design Start ***************/
+.header {
+  height: 95vh;
+  background-image: linear-gradient(to right bottom, rgba(85, 197, 122, 0.7), rgba(40, 180, 133, 0.7)), url(../img/hero.jpg);
+  background-size: cover;
+  background-position: top;
+  position: relative;
+  clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+  /****** Logo Box Design Start ******/
+  /****** Logo Box Design End ******/ }
+  .header__logo-box {
+    position: absolute;
+    top: 40px;
+    left: 60px; }
+  .header__logo {
+    height: 35px; }
+  .header__text-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center; }
+
 /*************** Header Design End ***************/
+.row {
+  max-width: 114rem;
+  background-color: yellowgreen;
+  margin: 0 auto; }
+  .row:not(:last-child) {
+    margin-bottom: 8rem; }
+  .row .col-1-of-2 {
+    width: calc((100% - 6rem)/2);
+    background-color: aqua;
+    float: left; }
+    .row .col-1-of-2:not(:last-child) {
+      margin-right: 6rem; }

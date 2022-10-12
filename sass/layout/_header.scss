@@ -1,0 +1,39 @@
+/*************** Header Design Start ***************/
+
+
+.header {
+    height: 95vh;
+    background-image: linear-gradient(to right bottom,
+            rgba($color-primary-light, 0.7),
+            rgba($color-primary-dark, 0.7)),
+        url(../img/hero.jpg);
+    background-size: cover;
+    background-position: top;
+    position: relative;
+    clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+
+
+    /****** Logo Box Design Start ******/
+    &__logo-box {
+        position: absolute;
+        top: 40px;
+        left: 60px;
+    }
+
+    &__logo {
+        height: 35px;
+    }
+
+    /****** Logo Box Design End ******/
+
+    &__text-box {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
+}
+
+
+/*************** Header Design End ***************/
