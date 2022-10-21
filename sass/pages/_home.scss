@@ -15,7 +15,7 @@
     // background-position: top;
     margin-top: -10rem;
 
-    
+
     transform: skewY(-7deg);
 
     &>* {
@@ -23,8 +23,14 @@
     }
 }
 
-.section-tours{
+.section-tours {
     background-color: $color-gray-light-1;
     padding: 20rem 0 10rem 0;
     margin-top: -10rem;
+}
+
+.section-stories {
+    position: relative;
+    padding: 10rem 0;
+    // background-color: $color-gray-light-1;
 }
