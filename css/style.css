@@ -466,3 +466,14 @@ body {
 .section-stories {
   position: relative;
   padding: 10rem 0; }
+
+.section-booking {
+  padding: 10rem 0;
+  background-image: linear-gradient(to right bottom, #7ed56f, #28b485); }
+
+.booking {
+  background-image: url(../img/nat-10.jpg);
+  background-size: cover;
+  border-radius: 3px;
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.2);
+  height: 50rem; }
