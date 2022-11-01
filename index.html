@@ -78,7 +78,7 @@
         <span class="heading-primary--sub">is where life happens</span>
       </div>
 
-      <a class="btn btn--white btn--animated" href="#">Discover our tours</a>
+      <a class="btn btn--white btn--animated" href="#section-tours">Discover our tours</a>
     </div>
   </header>
 
@@ -184,7 +184,7 @@
 
     <!-- Tours Section -->
 
-    <section class="section-tours">
+    <section class="section-tours" id="section-tours">
       <div class="utility-text-center utility-mb-big">
         <h2 class="heading-secondary">Most popular tours</h2>
       </div>
@@ -218,7 +218,7 @@
                   <p class="card__price-only">Only</p>
                   <p class="card__price-value">$209</p>
                 </div>
-                <a href="#" class="btn btn--white">Book Now</a>
+                <a href="#popup" class="btn btn--white">Book Now</a>
               </div>
             </div>
           </div>
@@ -251,7 +251,7 @@
                   <p class="card__price-only">Only</p>
                   <p class="card__price-value">$1290</p>
                 </div>
-                <a href="#" class="btn btn--white">Book Now</a>
+                <a href="#popup" class="btn btn--white">Book Now</a>
               </div>
             </div>
           </div>
@@ -284,7 +284,7 @@
                   <p class="card__price-only">Only</p>
                   <p class="card__price-value">$739</p>
                 </div>
-                <a href="#" class="btn btn--white">Book Now</a>
+                <a href="#popup" class="btn btn--white">Book Now</a>
               </div>
             </div>
           </div>
@@ -477,8 +477,9 @@
         <img src="img/nat-9.jpg" class="popup__img" alt="Tour Phoro">
       </div>
       <div class="popup__right">
-        <h2 class="heading-secondary">Start booking now</h2>
-        <h3 class="heading-tertiary">Important &ndash; Please read these terms before booking</h3>
+        <a href="#section-tours" class="popup__close">&times;</a>
+        <h2 class="heading-secondary utility-mb-small">Start booking now</h2>
+        <h3 class="heading-tertiary utility-mb-small">Important &ndash; Please read these terms before booking</h3>
         <p class="popup__text">
           Lorem ipsum dolor sit amet, consectetur adipiscing
           elit, sed do eiusmod tempor incididunt ut labore
@@ -487,9 +488,7 @@
           aliquip ex ea commodo consequat. Duis aute irure
           dolor in reprehenderit in voluptate velit esse
           cillum dolore eu fugiat nulla pariatur. Excepteur
-          sint occaecat cupidatat non proident, sunt in
-          culpa qui officia deserunt mollit anim id est
-          laborum.
+          sint occaecat cupidatat non proident, sunt in.
         </p>
         <a href="#" class="btn btn--green">Book now</a>
       </div>
