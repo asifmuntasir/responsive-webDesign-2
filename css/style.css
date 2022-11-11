@@ -6,6 +6,20 @@ Medium green: #55c57a
 Dark green: #28b485
 
 */
+/*
+0 - 600px for Smatphone
+600px - 900px for Tablet Portrait
+900px - 1200px for Tablet Landscape
+[1200px - 1800px] normal style apply
+1800px for Big Desktop
+*/
+/*
+$breakpoint argument choices:
+- phone
+- tab-port
+- tab-land
+- big-desktop
+*/
 *,
 ::after,
 ::before {
@@ -15,6 +29,15 @@ Dark green: #28b485
 
 html {
   font-size: 62.5%; }
+  @media (max-width: 56.25em) {
+    html {
+      font-size: 50%; } }
+  @media (max-width: 75em) {
+    html {
+      font-size: 56.25%; } }
+  @media (min-width: 112.5em) {
+    html {
+      font-size: 75%; } }
 
 body {
   box-sizing: border-box; }
